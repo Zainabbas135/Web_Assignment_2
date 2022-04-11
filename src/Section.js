@@ -1,10 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function Section() {
-    return (
-        <>
+  return (
+    <>
       <h2>Section title</h2>
       <div className="table-responsive">
         <table className="table table-striped table-sm">
@@ -18,7 +17,6 @@ function Section() {
             </tr>
           </thead>
           <tbody>
-
             <tr>
               <td>1,001</td>
               <td>random</td>
@@ -135,8 +133,8 @@ function Section() {
           </tbody>
         </table>
       </div>
-        </>
-    );
+    </>
+  );
 }
 
 export default Section;

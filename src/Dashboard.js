@@ -10,7 +10,7 @@ const data = {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
   ],
   datasets: [
     {
@@ -19,15 +19,14 @@ const data = {
       backgroundColor: "transparent",
       borderColor: "#007bff",
       borderWidth: 4,
-      pointBackgroundColor: "#007bff"
-    }
-  ]
+      pointBackgroundColor: "#007bff",
+    },
+  ],
 };
 
-export default function App() {
+export default () => {
   return (
     <>
-     {/* <div className="App"> */}
       <Line
         data={data}
         width={1423}
@@ -37,17 +36,16 @@ export default function App() {
             yAxes: [
               {
                 ticks: {
-                  beginAtZero: false
-                }
-              }
-            ]
+                  beginAtZero: false,
+                },
+              },
+            ],
           },
           legend: {
-            display: false
-          }
+            display: false,
+          },
         }}
       />
-     {/* </div> */}
-     </>
+    </>
   );
-}
+};
